@@ -171,7 +171,7 @@ body {
         visibility: hidden;
         transition: all .5s ease-in-out;
         z-index: 9999;
-
+animation: ring 1s ease-in-out infinite;
         &.active {
             opacity: 1;
             visibility: visible;
