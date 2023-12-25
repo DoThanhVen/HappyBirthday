@@ -11,7 +11,7 @@ body {
     margin: 0 !important;
     padding: 0;
     max-width: 100% !important;
-    height: 100vh;
+    height: auto;
     font-family: 'Dancing Script', cursive;
     position: relative;
     overflow: hidden;
@@ -171,7 +171,8 @@ body {
         visibility: hidden;
         transition: all .5s ease-in-out;
         z-index: 9999;
-animation: ring 1s ease-in-out infinite;
+        animation: ring 1s ease-in-out infinite;
+
         &.active {
             opacity: 1;
             visibility: visible;
