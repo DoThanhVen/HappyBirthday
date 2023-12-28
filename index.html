@@ -1,93 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Happy Birthday Tường Vy</title>
-        <link rel="stylesheet" href="./css/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="gift">
-                <div id="lid">
-                    <label class="line">
-                        <label class="heart"></label>
-                    </label>
-                </div>
-                <div id="box">
-                    <label class="line"></label>
-                </div>
-                <label class="click">Click Me!</label>
-            </div>
-            <div class="content">
-                <div class="text">
-                    <label class="characters">H</label>
-                    <label class="characters">A</label>
-                    <label class="characters">P</label>
-                    <label class="characters">P</label>
-                    <label class="characters">Y</label>
-                </div>
-                <div class="text">
-                    <label class="characters">B</label>
-                    <label class="characters">I</label>
-                    <label class="characters">R</label>
-                    <label class="characters">T</label>
-                    <label class="characters">H</label>
-                    <label class="characters">D</label>
-                    <label class="characters">A</label>
-                    <label class="characters">Y</label>
-                    <label class="characters">!</label>
-                </div>
-            </div>
-            <div class="fireworks"></div>
-            <img class="letter"
-                src="images/letter.png" alt="Letter" data-bs-toggle="modal"
-                data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-            <div class="modal fade" id="exampleModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <label class="modal-title" id="exampleModalLabel">Lời
-                                Chúc</label>
-                        </div>
-                        <div class="modal-body">
-                            <div class="heading">
-                                <p>Người gửi: Đỗ Thanh Vẹn</p>
-                                <p>Gửi: Phạm Nguyễn Tường Vy</p>
-                                <div>
-                                    Chúc mày có một sinh nhật thật vui vẻ và
-                                    tràn đầy hạnh phúc.
-                                    Mong rằng mày vẫn sẽ luôn xinh đẹp, ngày
-                                    càng xinh hơn nữa. Mọi thứ mà mày mong muốn
-                                    sẽ luôn suôn sẽ và sẽ mau chóng có được hạnh
-                                    phúc thật sự cho riêng mình. Và điều cuối
-                                    cùng, chúc mày mau trở thành đại gia để bao
-                                    tao đi Đà Lạt. Thén kiuu !
-                                </div>
-                                <p style="width: 200px;" class="d-flex flex-column align-items-center"><label>Ký
-                                        tên</label><label>Vẹn Đẹp
-                                        Trai</label></p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary"
-                                data-bs-dismiss="modal">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Tường Vy</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="images/banh.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" onclick="createRipple(event)">
+      <div class="gift">
+        <div id="lid">
+          <label class="line">
+            <label class="heart"></label>
+          </label>
         </div>
-        <script>
+        <div id="box">
+          <label class="line"></label>
+        </div>
+        <label class="click">Click Me!</label>
+      </div>
+      <div class="content">
+        <div class="text">
+          <label class="characters">H</label>
+          <label class="characters">A</label>
+          <label class="characters">P</label>
+          <label class="characters">P</label>
+          <label class="characters">Y</label>
+        </div>
+        <div class="text">
+          <label class="characters">B</label>
+          <label class="characters">I</label>
+          <label class="characters">R</label>
+          <label class="characters">T</label>
+          <label class="characters">H</label>
+          <label class="characters">D</label>
+          <label class="characters">A</label>
+          <label class="characters">Y</label>
+          <label class="characters">!</label>
+        </div>
+      </div>
+      <div class="fireworks"></div>
+      <img
+        class="letter"
+        src="images/letter.png"
+        alt="Letter"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+      />
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <label class="modal-title" id="exampleModalLabel">Lời Chúc</label>
+            </div>
+            <div class="modal-body">
+              <div class="heading">
+                <div class="header row">
+                  <div class="info col-sm-8">
+                    <p>Người gửi: Đỗ Thanh Vẹn</p>
+                    <p>Gửi: Phạm Nguyễn Tường Vy</p>
+                  </div>
+                  <div class="image col-sm-4">
+                    <img
+                      src="images/center.jpg"
+                      alt="Happy Birthday Tường Vy"
+                    />
+                  </div>
+                </div>
+                <div>
+                  Chúc mày có một sinh nhật thật vui vẻ và tràn đầy hạnh phúc.
+                  Mong rằng mày vẫn sẽ luôn xinh đẹp, ngày càng xinh hơn nữa.
+                  Mọi thứ mà mày mong muốn sẽ luôn suôn sẽ và sẽ mau chóng có
+                  được hạnh phúc thật sự cho riêng mình. Và điều cuối cùng, chúc
+                  mày mau trở thành đại gia để bao tao đi Đà Lạt. Thén kiuu !
+                </div>
+                <p
+                  style="width: 200px"
+                  class="d-flex flex-column align-items-center"
+                >
+                  <label>Ký tên</label><label>Vẹn Đẹp Trai</label>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //CLICK ON SCREEN
+      function createRipple(event) {
+        const colors = ["red", "blue", "green", "yellow", "pink", "purple"];
+        const ripple = document.createElement("div");
+        const rect = event.target.getBoundingClientRect();
+        const x = event.clientX + window.pageXOffset;
+        const y = event.clientY + window.pageYOffset;
+        const size = Math.max(rect.width, rect.height);
+
+        ripple.classList.add("ripple");
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.backgroundColor = colors[Math.floor(Math.random() * 6)];
+        ripple.style.left = `${x - size / 2}px`;
+        ripple.style.top = `${y - size / 2}px`;
+
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 1000);
+      }
+
       const click = document.querySelector(".click");
       const container = document.querySelector(".container");
       const fireworks = document.querySelector(".fireworks");
@@ -114,7 +163,7 @@
 
         if (start === true) {
           setInterval(createBubbles, 400);
-          setInterval(createParticle, 2000);
+          setInterval(createParticle, 5000);
         }
       });
 
@@ -131,6 +180,10 @@
         bubble.style.opacity = `${Math.random() * 0.5 + 0.5}`;
 
         document.body.appendChild(bubble);
+
+        bubble.addEventListener("click", () => {
+          bubble.remove();
+        });
 
         setTimeout(() => {
           bubble.remove();
@@ -151,9 +204,9 @@
         fireworks.appendChild(particle);
 
         setTimeout(() => {
-            particle.remove();
+          particle.remove();
         }, 2000);
       }
     </script>
-    </body>
+  </body>
 </html>
